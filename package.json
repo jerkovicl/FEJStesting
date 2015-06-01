@@ -4,7 +4,7 @@
   "description": "a sample testing setup",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tevko/FEJStesting.git"
+    "url": "https://github.com/jerkovicl/FEJStesting.git"
   },
   "keywords": [
     "testing",
@@ -13,16 +13,16 @@
     "travis",
     "node"
   ],
-  "author": "@tevko",
+  "author": "@jerkovicl",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tevko/FEJStesting/issues"
+    "url": "https://github.com/jerkovicl/FEJStesting/issues"
   },
-  "homepage": "https://github.com/tevko/FEJStesting",
+  "homepage": "https://github.com/jerkovicl/FEJStesting",
   "devDependencies": {
     "jasmine-core": "^2.3.2",
     "karma": "^0.12.31",
-    "karma-firefox-launcher": "^0.1.4",
+    "karma-chrome-launcher": "^0.1.8",
     "karma-jasmine": "^0.3.5"
   }
 }
