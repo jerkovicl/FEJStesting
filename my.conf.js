@@ -2,10 +2,7 @@
 // Generated on Fri May 08 2015 21:55:21 GMT-0400 (Eastern Daylight Time)
 
 module.exports = function (config) {
-  if(process.env.TRAVIS){
-    config.browsers = ['Chrome_travis_ci'];
-  }
-  
+
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -19,7 +16,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'dist/*.js' , 'tests/*.js'
+      'dist/*.js', 'tests/*.js'
     ],
 
 
@@ -59,14 +56,14 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Chrome_without_security', 'ChromeCanary'],
+    browsers: ['Chrome', 'ChromeCanary'], // 'Chrome_without_security'
  
     // you can define custom flags 
     customLaunchers: {
-      Chrome_without_security: {
+      /*Chrome_without_security: {
         base: 'Chrome',
         flags: ['--disable-web-security']
-      },
+      },*/
       Chrome_travis_ci: {
         base: 'Chrome',
         flags: ['--no-sandbox']
@@ -78,4 +75,9 @@ module.exports = function (config) {
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false
   });
+
+  if (process.env.TRAVIS) {
+    config.browsers = ['Chrome_travis_ci'];
+  }
+
 };
