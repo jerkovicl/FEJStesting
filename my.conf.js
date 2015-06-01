@@ -1,7 +1,11 @@
 // Karma configuration
 // Generated on Fri May 08 2015 21:55:21 GMT-0400 (Eastern Daylight Time)
 
-module.exports = function(config) {
+module.exports = function (config) {
+  if(process.env.TRAVIS){
+    config.browsers = ['Chrome_travis_ci'];
+  }
+  
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -55,13 +59,17 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Chrome_without_security'],
+    browsers: ['Chrome', 'Chrome_without_security', 'ChromeCanary'],
  
     // you can define custom flags 
     customLaunchers: {
       Chrome_without_security: {
         base: 'Chrome',
         flags: ['--disable-web-security']
+      },
+      Chrome_travis_ci: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
       }
     },
 
