@@ -27,5 +27,8 @@
     "karma-jasmine": "^0.3.5",
     "jasmine-node": "latest",
     "request": "latest"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node --report"
   }
 }
