@@ -1,3 +1,4 @@
+/// <reference path="typings/node/node.d.ts"/>
 // Karma configuration
 // Generated on Fri May 08 2015 21:55:21 GMT-0400 (Eastern Daylight Time)
 
