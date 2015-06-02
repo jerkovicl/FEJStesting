@@ -1,3 +1,4 @@
+/// <reference path="../typings/jasmine/jasmine.d.ts"/>
 describe('getDivBg', function() {
     var d = document.querySelector('.box');
 
