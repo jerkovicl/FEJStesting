@@ -6,7 +6,3 @@ it('Server should respond to /', function (done) {
         done();
     });
 });​
-
-
-
-
