@@ -26,9 +26,11 @@
     "karma-firefox-launcher": "^0.1.6",
     "karma-jasmine": "^0.3.5",
     "jasmine-node-karma": "latest",
+    "jasmine-node": "latest",
+    "express": "latest",
     "request": "latest"
   },
   "scripts": {
-    "test": "./node_modules/.bin/jasmine-node --report"
+    "test": "./node_packages/.bin/jasmine-node spec"
   }
 }
