@@ -1,4 +1,4 @@
-
+var request = require ('http');
 
 it('Server should respond to / with status ok', function (done) {
   request('http://jerkovicl.github.io/', function (error, response, body) {
