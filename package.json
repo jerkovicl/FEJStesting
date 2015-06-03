@@ -31,6 +31,6 @@
     "request": "latest"
   },
   "scripts": {
-    "test": "./node_modules/.bin/jasmine-node tests"
+    "test": "jasmine-node tests"
   }
 }
