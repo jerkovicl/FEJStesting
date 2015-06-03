@@ -1,3 +1,4 @@
+/// <reference path="../typings/jasmine/jasmine.d.ts"/>
 var request = require("request");
 
 var base_url = "http://google.com/"
