@@ -31,6 +31,6 @@
     "request": "latest"
   },
   "scripts": {
-    "test": "jasmine-node tests"
+    "test": "jasmine-node-karma tests"
   }
 }

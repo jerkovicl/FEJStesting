@@ -1,5 +1,5 @@
 /// <reference path="../typings/jasmine/jasmine.d.ts"/>
-//var request = require("request");
+var request = require("request");
 
 var base_url = "http://www.croatiaboatcharter.com/";
 
